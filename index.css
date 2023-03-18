@@ -1,0 +1,189 @@
+body{
+    background-image: url('./images/bg-5.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: serif;
+    color: white;
+}
+#header-top{
+   width:90%;
+   background-attachment: fixed;
+   display: flex;
+   flex-wrap: wrap;
+   color:white;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;   
+}
+#heading{
+    color: red;
+    font-family: 'Abril Fatface', cursive;
+    text-shadow: 0 0 6px orange;
+}
+.img1{
+    width:8rem;
+    height:2rem;
+    margin: auto;
+}
+.img2{
+    width:2rem;
+    height: 2rem;
+    margin: auto;
+}
+#container{
+    margin-top: 3%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#searchHeroBar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#displayHeroSearchResults{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.loading-and-error-font{
+    font-family: 'PT Mono', monospace;
+    letter-spacing: 2px;
+}
+
+
+.hero-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+    
+}
+#fav a:hover{
+    filter: brightness(50%);
+}
+.img1:hover{
+    filter:drop-shadow(0px 0px 3px red);
+}
+.img2:hover{
+    filter:drop-shadow(0px 0px 8px blue);
+}
+a:hover{
+    color: white;
+    cursor: pointer;
+    text-decoration: none; 
+}
+a:active{
+    color: white;
+    text-decoration: none;
+}
+
+::placeholder {
+    color:rgb(21, 21, 23);   
+  }
+
+
+@media only screen and (min-width : 900px){
+    #header-top{
+        margin-left: 3%;
+        height: 4%;
+        padding: 1%;
+        border-radius:50px;
+        font-size: 1.2rem;
+    }
+    #heading{
+        font-size: 5rem;
+        letter-spacing: 8px;
+        font-weight: 900;
+    }
+    #info{
+        font-size: 2rem;
+        letter-spacing: 2px;
+       
+    }
+    
+    #searchHeroBar{
+        margin-top: 3%;
+        position: relative;
+        width:50%;     
+    }
+    #searchHero{
+        position: relative;
+        width:100%;
+        padding:0.5rem;
+        height:2%;
+        font-size: 1.2rem; 
+        border-radius: 30px;
+        border: none;
+    }
+
+    #displayHeroSearchResults{  
+        flex-direction: row;
+        width: 80%;
+        margin: 2%;
+        
+    }
+    .hero-card{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Dawning of a New Day', cursive;
+        font-size: 2.5rem;
+        font-weight: 900;
+        letter-spacing: 2px;
+        white-space: nowrap;
+        padding: 1%;
+        margin: 2%;
+        width:25%;
+        height : 20%;
+    }
+
+    .hero-card:hover{
+        cursor: pointer;
+        filter: drop-shadow(0 0 3px rgb(255, 255, 255));
+    }
+
+    .hero-card img{
+        width: 150px;
+        margin-top: 2%;
+        height: 150px;
+        border-radius: 100px;
+        box-shadow: 0 0 50px lightgrey;
+       
+    }
+
+    .fav-btn{
+        background-image: linear-gradient(60deg,rgb(255, 0, 0), rgb(226, 28, 28));
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:3%;
+        padding: 3%;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border: 3px solid rgb(255, 0, 0);
+        box-shadow: 0 0 10px rgb(255, 0, 0);
+        border-radius: 20px;
+    }
+    
+    
+
+}
